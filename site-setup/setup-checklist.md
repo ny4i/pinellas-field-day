@@ -30,10 +30,12 @@ These items have to happen before any station can power up.
 
 ### Network and server (LAN team)
 
-- [ ] Place the WiFi AP / Switch (SSID `TRLOG`) at its designated location.
-- [ ] Power up the Raspberry Pi 400 and confirm both WiFi interfaces are up:
-      built-in WiFi on **TRLOG** (`192.168.0.100`), USB WiFi adapter on
-      **City-Public**.
+- [ ] Place the **Linksys router** at its designated location and confirm it's
+      broadcasting the **TRLOG** SSID (WiFi `10.0.0.0/24`) and providing the
+      wired `192.168.0.0/24` LAN.
+- [ ] Power up the Raspberry Pi 400 and confirm both interfaces are up:
+      wired Ethernet to the Linksys router (`192.168.0.100`), USB WiFi adapter
+      on **City-Public**.
 - [ ] Confirm the Python **TR4W Server** script is running on the Pi 400.
 - [ ] Confirm the NTP server is reachable from a laptop on TRLOG.
 - [ ] Place the portable HDMI monitor at the Pi 400.
