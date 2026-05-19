@@ -1,0 +1,8 @@
+.DS_Store
+.claude/
+*.swp
+*~
+
+# draw.io desktop backups
+.$*.bkp
+*.bkp
