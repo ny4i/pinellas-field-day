@@ -1,0 +1,105 @@
+<mxfile host="app.diagrams.net" agent="Claude" version="22.0.0">
+  <diagram name="Cable / Power" id="cable-power-2026">
+    <mxGraphModel dx="1400" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <mxCell id="title" value="Mains Power &amp; Cable Routing — UPARC Field Day 2026" style="text;html=1;align=center;verticalAlign=middle;fontSize=20;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="280" y="10" width="840" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="subtitle" value="DRAFT — outlet-to-strip routing and cord lengths are my guesses; confirm before setup day" style="text;html=1;align=center;verticalAlign=middle;fontSize=12;fontStyle=2;fontColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="280" y="40" width="840" height="20" as="geometry" />
+        </mxCell>
+
+        <mxCell id="ac_left" value="&lt;b&gt;AC Outlet&lt;/b&gt;&#10;Left wall" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=2;fontSize=13;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="100" y="100" width="180" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="ac_right" value="&lt;b&gt;AC Outlet&lt;/b&gt;&#10;Right wall" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=2;fontSize=13;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="610" y="100" width="180" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="ac_bottom" value="&lt;b&gt;AC Outlet&lt;/b&gt;&#10;Bottom wall" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=2;fontSize=13;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="1120" y="100" width="180" height="70" as="geometry" />
+        </mxCell>
+
+        <mxCell id="pi_strip" value="&lt;b&gt;Pi Rack&lt;/b&gt;&#10;(left-wall rack)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff5e6;strokeColor=#b85450;strokeWidth=2;verticalAlign=top;align=center;fontSize=13;fontStyle=1;spacingTop=6;" vertex="1" parent="1">
+          <mxGeometry x="40" y="320" width="220" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="pi_strip_load" value="• &lt;b&gt;UPS&lt;/b&gt; (plugs into strip)&#10;• &lt;b&gt;Pi 400&lt;/b&gt; — protected by UPS&#10;• &lt;b&gt;WiFi AP&lt;/b&gt; — plugs into strip&#10;&#10;&lt;i&gt;Pi 400 is the only load behind the UPS. WiFi AP and any future rack gear plug into the strip directly.&lt;/i&gt;" style="text;html=1;align=left;verticalAlign=top;fontSize=11;spacingLeft=12;spacingRight=12;spacingTop=4;" vertex="1" parent="1">
+          <mxGeometry x="50" y="360" width="200" height="230" as="geometry" />
+        </mxCell>
+
+        <mxCell id="vhf_strip" value="&lt;b&gt;VHF Station&lt;/b&gt;&#10;(FT-897 — Paul KC4YDY)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff5e6;strokeColor=#b85450;strokeWidth=2;verticalAlign=top;align=center;fontSize=13;fontStyle=1;spacingTop=6;" vertex="1" parent="1">
+          <mxGeometry x="300" y="320" width="220" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="vhf_strip_load" value="• &lt;b&gt;FT-897 power supply&lt;/b&gt;&#10;• Anything else Paul brings&#10;&#10;&lt;i&gt;Owned and configured by Paul KC4YDY. Plug into the station's power strip; specifics are Paul's call.&lt;/i&gt;" style="text;html=1;align=left;verticalAlign=top;fontSize=11;spacingLeft=12;spacingRight=12;spacingTop=4;" vertex="1" parent="1">
+          <mxGeometry x="310" y="360" width="200" height="230" as="geometry" />
+        </mxCell>
+
+        <mxCell id="s2_strip" value="&lt;b&gt;Station 2 — Digital&lt;/b&gt;&#10;(K3S)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff5e6;strokeColor=#b85450;strokeWidth=2;verticalAlign=top;align=center;fontSize=13;fontStyle=1;spacingTop=6;" vertex="1" parent="1">
+          <mxGeometry x="560" y="320" width="220" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="s2_strip_load" value="• &lt;b&gt;K3S 12 V power supply&lt;/b&gt;&#10;• Laptop power brick&#10;• Behringer wall adapter&#10;• &lt;b&gt;VGA monitor&lt;/b&gt; power cord&#10;&#10;&lt;i&gt;Heaviest load of the four station strips because of the digital monitor.&lt;/i&gt;" style="text;html=1;align=left;verticalAlign=top;fontSize=11;spacingLeft=12;spacingRight=12;spacingTop=4;" vertex="1" parent="1">
+          <mxGeometry x="570" y="360" width="200" height="230" as="geometry" />
+        </mxCell>
+
+        <mxCell id="s1_strip" value="&lt;b&gt;Station 1&lt;/b&gt;&#10;(K4)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff5e6;strokeColor=#b85450;strokeWidth=2;verticalAlign=top;align=center;fontSize=13;fontStyle=1;spacingTop=6;" vertex="1" parent="1">
+          <mxGeometry x="820" y="320" width="220" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="s1_strip_load" value="• &lt;b&gt;K4 12 V power supply&lt;/b&gt;&#10;• Laptop power brick&#10;• Behringer wall adapter" style="text;html=1;align=left;verticalAlign=top;fontSize=11;spacingLeft=12;spacingRight=12;spacingTop=4;" vertex="1" parent="1">
+          <mxGeometry x="830" y="360" width="200" height="230" as="geometry" />
+        </mxCell>
+
+        <mxCell id="s3_strip" value="&lt;b&gt;Station 3 — CW&lt;/b&gt;&#10;(K3 + WinKey)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff5e6;strokeColor=#b85450;strokeWidth=2;verticalAlign=top;align=center;fontSize=13;fontStyle=1;spacingTop=6;" vertex="1" parent="1">
+          <mxGeometry x="1080" y="320" width="220" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="s3_strip_load" value="• &lt;b&gt;K3 12 V power supply&lt;/b&gt;&#10;• Laptop power brick&#10;• Behringer wall adapter&#10;&#10;&lt;i&gt;WinKey Mini is USB-powered from the laptop; not on the strip.&lt;/i&gt;" style="text;html=1;align=left;verticalAlign=top;fontSize=11;spacingLeft=12;spacingRight=12;spacingTop=4;" vertex="1" parent="1">
+          <mxGeometry x="1090" y="360" width="200" height="230" as="geometry" />
+        </mxCell>
+
+        <mxCell id="e_left_pi" style="endArrow=classicThin;html=1;strokeColor=#b85450;strokeWidth=2.5;exitX=0.25;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="ac_left" target="pi_strip">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl_left_pi" value="strip cord&#10;(no extension)" style="text;html=1;align=center;verticalAlign=middle;fontSize=10;fontStyle=2;fontColor=#b85450;fillColor=#ffffff;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="80" y="220" width="120" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="e_left_vhf" style="endArrow=classicThin;html=1;strokeColor=#b85450;strokeWidth=2.5;exitX=0.75;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="ac_left" target="vhf_strip">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl_left_vhf" value="strip cord&#10;(no extension)" style="text;html=1;align=center;verticalAlign=middle;fontSize=10;fontStyle=2;fontColor=#b85450;fillColor=#ffffff;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="290" y="220" width="120" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="e_right_s2" style="endArrow=classicThin;html=1;strokeColor=#b85450;strokeWidth=3;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="ac_right" target="s2_strip">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl_right_s2" value="&lt;b&gt;50 ft extension&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#b85450;fillColor=#ffffff;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="610" y="225" width="180" height="20" as="geometry" />
+        </mxCell>
+
+        <mxCell id="e_bottom_s1" style="endArrow=classicThin;html=1;strokeColor=#b85450;strokeWidth=3;exitX=0.25;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="ac_bottom" target="s1_strip">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl_bottom_s1" value="&lt;b&gt;25 ft extension&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#b85450;fillColor=#ffffff;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="940" y="225" width="160" height="20" as="geometry" />
+        </mxCell>
+
+        <mxCell id="e_bottom_s3" style="endArrow=classicThin;html=1;strokeColor=#b85450;strokeWidth=2.5;exitX=0.75;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="ac_bottom" target="s3_strip">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl_bottom_s3" value="strip cord&#10;(no extension)" style="text;html=1;align=center;verticalAlign=middle;fontSize=10;fontStyle=2;fontColor=#b85450;fillColor=#ffffff;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1200" y="220" width="120" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="notes_box" value="Notes &amp; assumptions" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fafafa;strokeColor=#666666;verticalAlign=top;align=left;fontStyle=1;spacingLeft=8;spacingTop=6;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="40" y="640" width="1260" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="notes" value="&lt;b&gt;1. Mains capacity:&lt;/b&gt; verified — we have set up in this room before with this same load profile, no breaker issues.&#10;&#10;&lt;b&gt;2. Outlet-to-strip mapping (DRAFT — confirm):&lt;/b&gt;&#10;     • Left-wall outlet  →  Pi Rack  +  VHF Station   (short runs; built-in strip cords sufficient)&#10;     • Right-wall outlet  →  Station 2   (top-wall run; needs the &lt;b&gt;50 ft&lt;/b&gt; extension)&#10;     • Bottom-wall outlet  →  Station 1 (needs the &lt;b&gt;25 ft&lt;/b&gt; extension)  +  Station 3 (short run; built-in strip cord)&#10;&#10;&lt;b&gt;3. UPS coverage:&lt;/b&gt; only the Pi 400 is behind the UPS. WiFi AP plugs into the rack's strip directly. Rationale: the Pi holds the live log and stats workload; a brief outage that loses the AP can be re-established faster than losing Pi state.&#10;&#10;&lt;b&gt;4. WinKey Mini:&lt;/b&gt; USB-powered from the laptop; not counted on Station 3's strip.&#10;&#10;&lt;b&gt;5. Talk-In Station:&lt;/b&gt; not on this diagram — Paul or whoever brings it owns its own power, and it doesn't draw from any of the four station strips." style="text;html=1;align=left;verticalAlign=top;fontSize=12;spacingLeft=12;spacingRight=12;spacingTop=4;" vertex="1" parent="1">
+          <mxGeometry x="50" y="680" width="1240" height="170" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
