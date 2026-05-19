@@ -6,9 +6,9 @@ Logical topology of the on-site logging and stats network for ARRL Field Day.
 
 ```mermaid
 flowchart LR
-    subgraph TRLOG["TRLOG WiFi  -  192.168.0.0/24"]
+    subgraph TRLOG["TRLOG Network"]
         direction TB
-        AP["WiFi AP / Switch<br/><b>SSID: TRLOG</b>"]
+        AP["Linksys Router<br/><b>SSID: TRLOG</b><br/>WiFi: 10.0.0.0/24<br/>Wired LAN: 192.168.0.0/24"]
         PI["Raspberry Pi 400<br/>192.168.0.100<br/>──────────<br/>TR4W Server (Python)<br/>NTP server<br/>n1mm_view (stats)<br/>Web UI on :8080<br/>rsync publisher"]
         L1["Station 1<br/><i>K4 — SSB</i>"]
         L2["Station 2<br/><i>K3S — SSB / Digital</i>"]
@@ -18,7 +18,7 @@ flowchart LR
         L2 -. WiFi .- AP
         L3 -. WiFi .- AP
         LV -. WiFi .- AP
-        AP -. WiFi .- PI
+        AP --- PI
     end
     MON["Portable<br/>HDMI Monitor"]
     NET(("City-Public<br/>WiFi"))
@@ -39,7 +39,7 @@ flowchart LR
     class NET,WEB1,WEB2,MON ext
 ```
 
-**Legend:** dotted = WiFi · solid = HDMI · double arrow = rsync publish
+**Legend:** dotted = WiFi · thin solid = Ethernet · thick solid = HDMI · double arrow = rsync publish
 
 ---
 
@@ -63,14 +63,20 @@ See [troubleshooting.md](troubleshooting.md) for the traffic flows.
 | **Local web server** `:8080`  | Serves the stats images on TRLOG — the HDMI monitor browses to it, and any laptop on TRLOG can view it too at `http://192.168.0.100:8080` |
 | **rsync publisher**    | Whenever the RAM-disk images update, rsyncs them to the **UPARC** and **SPARC** web servers |
 
-## Two WiFi interfaces — important
+## Two network interfaces — important
 
-The Pi 400 is **dual-homed** by design. The two networks must not be confused:
+The Pi 400 is **dual-homed** by design. The two interfaces must not be confused:
 
-| Interface          | SSID         | Purpose                                              |
-|--------------------|--------------|------------------------------------------------------|
-| Built-in WiFi      | **TRLOG**    | Talks to the logging laptops; static `192.168.0.100` |
-| USB WiFi adapter   | **City-Public** | Internet uplink — for publishing stats *only*     |
+| Interface          | Connects to       | Address          | Purpose                                                  |
+|--------------------|-------------------|------------------|----------------------------------------------------------|
+| Built-in Ethernet  | Linksys router (wired LAN side) | `192.168.0.100`/24 | All TRLOG-side server traffic (UDP, NTP, rsync, web)     |
+| USB WiFi adapter   | **City-Public** (venue WiFi)    | DHCP             | Internet uplink — for publishing stats *only*            |
+
+Laptops sit on the **WiFi side** of the Linksys router (TRLOG SSID,
+`10.0.0.0/24`); the Pi 400 sits on the **wired side**
+(`192.168.0.0/24`). The router bridges between them so laptop traffic to
+the Pi (UDP broadcasts, NTP, HTTP to `:8080`) works without per-laptop
+configuration.
 
 ## Laptop setup — non-negotiable
 

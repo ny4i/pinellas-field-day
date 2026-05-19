@@ -17,6 +17,8 @@ site-setup/         On-site logging and operating setup
     station-2-k3s.md      K3S — SSB / Digital + VGA monitor
     station-3-k3-cw.md    K3 — CW + WinKey + paddle
   reference/          Original OmniGraffle diagrams and ARRL FD packet/presentation
+                      Includes Ryan AF4O's 2026 ARRL Field Day Presentation (.pptx)
+                      which covers much of the same setup/operating info as these docs
 
 brochures/          2026 Field Day flyer + club logos
   FieldDay2026-Flyer*.{pdf,jpg,png}   Final flyer in print and social formats
