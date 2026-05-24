@@ -33,13 +33,13 @@
   <rect x="0" y="58" width="850" height="10" fill="url(#redGrad)"/>
 
   <!-- ============== HERO ============== -->
-  <text x="425" y="195" text-anchor="middle"
+  <text x="425" y="170" text-anchor="middle"
         font-family="Helvetica Neue, Helvetica, Arial, sans-serif"
         font-weight="700" font-size="66" letter-spacing="0"
         fill="#b81c2a">
     HAM RADIO FIELD DAY
   </text>
-  <text x="425" y="246" text-anchor="middle"
+  <text x="425" y="221" text-anchor="middle"
         font-family="Helvetica Neue, Helvetica, Arial, sans-serif"
         font-weight="700" font-size="36" letter-spacing="12"
         fill="#0a2540">
